@@ -1,0 +1,99 @@
+/*
+===========================================
+================== CONTACT ================
+===========================================
+*/
+
+:root {
+    --main-font: 'Roboto', sans-serif;
+    --title-font: 'Montserrat', sans-serif;;
+    --banner-font: 'Dancing Script', cursive;
+
+    --black: #000000;
+    --white: rgb(255, 255, 255);
+    --grey: #808080;
+    --grey-dark: #3b3b3b;
+    --orange: #f56600;
+    --dark-orange: #EC7A00;
+}
+
+.contact-main {
+    width: 100%;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+
+    .contact-wrapper {
+        display: flex;
+        flex-direction: column;
+
+        .contact-title {
+            text-align: center;
+        }
+
+        .contact-form-div {
+            padding: 10px;
+
+            .contact-form {
+                display: flex;
+                flex-direction: column;
+
+                .form-input {
+                    margin-bottom: 1rem;
+                    padding: 0.5rem;
+                }
+
+                .form-textarea{
+                    padding: 0.5rem;
+                }
+
+                .sbm-button{
+                    width: 75%;
+                    margin: 1rem auto;
+                    background-color: var(--black);
+                    color: var(--white);
+                    border: none;
+                    height: 3rem;
+                }
+            }
+
+            .contact-form > input{
+                height: 2rem;
+            }
+
+        }
+    }
+
+    .contact-map {
+        padding: 10px;
+    }
+}
+
+textarea{
+    resize: none;
+}
+
+@media screen and (width > 768px) {
+    .contact-main {
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+
+        .contact-wrapper{
+            padding: 3rem;
+            width: 40%;
+        }
+        .contact-map{
+            flex-grow: 1;
+        }
+    }
+}
+
+
+
+
+
+
+
+
